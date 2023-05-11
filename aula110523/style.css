@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: cadetblue;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+thead {
+    background-color: grey;
+}
+
+tbody{
+    background-color: white;
+}
+
+th {
+    background-color: grey;
+    font-weight: bolder;
+    color: black;
+}
+
+button {
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    color: blueviolet;
+}
+
+button :hover {
+    background-color: black;
+}
