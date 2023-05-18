@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temeperatura checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+
+        <h1>SELETOR DE TEMPERATURA</h1>
+    <form action="">
+        <input type="number" placeholder="temperatura" id="inputNumero">
+
+        <input type="button" value="Converter" onclick="mudarCor()">
+
+        <input type="range">
+
+        <input type="color" onchange="mudarCor()">
+    </form>
+
+
+    <section id="temperaturas">
+
+        <div id="celsius">
+            <h5>celsius</h5>
+            <h6>100</h6>
+        </div>
+
+        <div id="farenheit">
+            <h5>farenheit</h5>
+            <h6>23130</h6>
+        </div>
+
+        <div id="kelvin">
+            <h5>kelvin</h5>
+            <h6>3193890</h6>
+        </div>
+
+    </section>
+    </div>
+
+    <script>
+        function mudarCor() {
+            var cor = document.querySelector(".conteiner")
+            var inputNumero = document.getElementById("inputNumero");
+
+      var numeroSelecionado = parseInt(inputNumero.value);
+
+      if (numeroSelecionado >= 40) {
+        cor.style.backgroundColor = "red";
+      } else if (numeroSelecionado <= 0) {
+        cor.style.backgroundColor = "skyblue";
+      } else if (numeroSelecionado === 30) {
+        cor.style.backgroundColor = "orange";
+      } else {
+        cor.style.backgroundColor = "";
+      }
+    
+      }
+    
+    </script>
+</body>
+
+</html>
